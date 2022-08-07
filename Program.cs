@@ -14,7 +14,7 @@ namespace Help
             if(a.All(char.IsLetter) == true)
             Console.WriteLine("onWord");
             else if(a.All(char.IsLetterOrDigit) == true && a.All(char.IsDigit) == false)
-            Console.WriteLine("onWord and Number");
+            Console.WriteLine("onWord");
         }
 
         public void number(string a)
@@ -30,42 +30,23 @@ namespace Help
         }
         static void Main(string[] args)
         {
-
-
-
             Console.WriteLine("Enter the value");
-            string text = Console.ReadLine();
-
-            ConsoleReader Obj = new ConsoleReader();
-
-
-            onWord obj1 = new onWord(Obj.word);
-            onNumber obj2 = new onNumber(Obj.number);
-            onJunk obj3 = new onJunk(Obj.junk);
-
-            obj1(text);
-            obj2(text);
-            obj3(text);
-
-
-           /* if ()
+            for(int i = 0; i < Console.Read(); i++)
             {
-                Console.WriteLine("OnJunk");
+                string text = Console.ReadLine();
+
+                ConsoleReader Obj = new ConsoleReader();
+
+                onWord obj1 = new onWord(Obj.word);
+                onNumber obj2 = new onNumber(Obj.number);
+                onJunk obj3 = new onJunk(Obj.junk);
+
+                obj1(text);
+                obj2(text);
+                obj3(text);
+
             }
-            else if () 
-            {
-                Console.WriteLine("OnWord");
-            }
-            else if ()
-            {
-                Console.WriteLine("OnNumber");
-            }*/
 
-        }
-        public static bool CheckInt(string input)
-        {
-            int number = 0;
-            return int.TryParse(input, out number);
         }
 
         public static bool CheckSpecialChar(string input)
