@@ -30,6 +30,10 @@ namespace Delegates
             {
                 return word(input);
             }
+            else if (input.All(char.IsDigit) == false && input.All(char.IsLetterOrDigit))
+            {
+                return word(input);
+            }
             else if(input.All(char.IsDigit))
             {
                 return number(input);
