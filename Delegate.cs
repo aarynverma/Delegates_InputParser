@@ -9,8 +9,6 @@ namespace Delegates
     public class Delegate
     {
         public delegate string onWord(string a);
-        public delegate string onNumber(string a);
-        public delegate string onJunk(string a);
 
         public static string word(string a)
         {

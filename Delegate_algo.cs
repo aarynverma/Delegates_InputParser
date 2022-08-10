@@ -10,7 +10,7 @@ namespace Delegates
 {
     public class ConsoleReader
     {
-        public void Run(Delegate.onWord word, Delegate.onNumber number, Delegate.onJunk junk)
+        public void Run(Delegate.onWord word, Delegate.onWord number, Delegate.onWord junk)
         {
             while (true)
             {
@@ -24,7 +24,7 @@ namespace Delegates
                 Console.WriteLine(response);
             }
         }
-        public string Response(string input, Delegate.onWord word, Delegate.onNumber number, Delegate.onJunk junk)
+        public string Response(string input, Delegate.onWord word, Delegate.onWord number, Delegate.onWord junk)
         {
             if (input.All(char.IsLetter))
             {
