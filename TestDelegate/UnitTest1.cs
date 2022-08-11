@@ -1,3 +1,4 @@
+using Delegate = Delegates.Delegate;
 namespace TestDelegate
 {
     public class UnitTest1
@@ -30,7 +31,7 @@ namespace TestDelegate
         {
             ConsoleReader reader = new ConsoleReader();
             string name = "aryan";
-            string result = reader.Response(name, Delegates.Delegate.Isword, Delegates.Delegate.Isnumber, Delegates.Delegate.Isjunk);
+            string result = reader.Response(name, Delegate.Isword, Delegate.Isnumber, Delegate.Isjunk);
             Assert.Equal($"{name} is a word", result);
         }
     }
