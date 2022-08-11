@@ -10,17 +10,17 @@ namespace Delegates
     {
         public delegate string onWord(string a);
 
-        public static string word(string a)
+        public static string Isword(string a)
         {
             return $"{a} is a word";
         }
 
-        public static string number(string a)
+        public static string Isnumber(string a)
         {
             return $"{a} is a number";
         }
 
-        public static string junk(string a)
+        public static string Isjunk(string a)
         {
             return $"{a} is a junk";
         }

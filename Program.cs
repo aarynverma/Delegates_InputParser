@@ -8,7 +8,7 @@ namespace Delegates
         static void Main(string[] args)
         {
             ConsoleReader reader = new ConsoleReader();
-            reader.Run(Delegate.word, Delegate.number, Delegate.junk);
+            reader.Run(Delegate.Isword, Delegate.Isnumber, Delegate.Isjunk);
 
         }
     }
